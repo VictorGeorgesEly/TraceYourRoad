@@ -1,0 +1,14 @@
+[
+  {
+    "id": "user1",
+    "name": "Alizée GOUGET",
+    "email": "alice@example.com",
+    "avatar": "https://media.licdn.com/dms/image/v2/C4E03AQFhtmqxQKRagQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1638429144612?e=2147483647&v=beta&t=vkQf4hH3T6iLH12gMjfe2GfS4n3AdOTiYd5jwp99VJQ",
+    "bio": "Digital nomad & roadtrip enthusiast",
+    "stats": {
+      "roadtripsCount": 12,
+      "distanceTraveled": 15420,
+      "countriesVisited": 8
+    }
+  }
+]

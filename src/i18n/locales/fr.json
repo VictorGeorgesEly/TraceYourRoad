@@ -1,0 +1,77 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "back": "Retour",
+    "ok": "OK",
+    "danger_zone": "Zone de Danger"
+  },
+  "auth": {
+    "login_title": "TraceYourRoad",
+    "email_label": "Email",
+    "password_label": "Mot de passe",
+    "login_btn": "Se connecter",
+    "login_failed": "Échec de connexion",
+    "invalid_email": "Email invalide",
+    "password_min": "Le mot de passe doit faire au moins 6 caractères"
+  },
+  "tabs": {
+    "map": "Carte",
+    "roadtrips": "Voyages",
+    "profile": "Profil",
+    "edit_profile": "Modifier Profil"
+  },
+  "roadtrips": {
+    "title": "Mes Voyages",
+    "empty": "Aucun voyage trouvé. Commencez une nouvelle aventure !",
+    "distance": "Distance",
+    "duration": "Durée",
+    "stops": "Étapes",
+    "itinerary": "Itinéraire",
+    "add_point": "Ajouter Étape",
+    "delete_confirm_title": "Supprimer le Voyage",
+    "delete_confirm_msg": "Êtes-vous sûr de vouloir supprimer ce voyage ? Cette action est irréversible.",
+    "delete_btn": "Supprimer le Voyage",
+    "create_title": "Créer un Voyage",
+    "field_title": "Titre",
+    "field_desc": "Description",
+    "field_country": "Pays",
+    "create_btn": "Créer le Voyage",
+    "created_msg": "Voyage créé !"
+  },
+  "points": {
+    "type_label": "Type (ville, monument, nature...)",
+    "add_btn": "Ajouter l'Étape",
+    "added_msg": "Étape ajoutée !",
+    "delete_confirm_title": "Supprimer l'Étape",
+    "delete_confirm_msg": "Êtes-vous sûr ?",
+    "delete_btn": "Supprimer l'Étape",
+    "write_article": "Écrire un Article",
+    "read_articles": "Lire les Articles",
+    "view_photos": "Voir les Photos"
+  },
+  "articles": {
+    "create_title": "Écrire un Article",
+    "field_title": "Titre de l'article",
+    "field_content": "Contenu (Markdown)",
+    "publish_btn": "Publier l'Article",
+    "published_msg": "Article publié !"
+  },
+  "profile": {
+    "edit_btn": "Modifier",
+    "share_btn": "Partager",
+    "logout_btn": "Déconnexion",
+    "stats_roadtrips": "Voyages",
+    "stats_countries": "Pays",
+    "stats_km": "km",
+    "share_msg": "Regarde mon profil de voyage sur TraceYourRoad ! 🌍",
+    "share_title": "Profil TraceYourRoad",
+    "edit_title": "Modifier Profil",
+    "save_changes": "Enregistrer",
+    "updated_msg": "Profil mis à jour avec succès"
+  }
+}

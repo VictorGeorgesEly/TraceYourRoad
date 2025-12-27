@@ -1,0 +1,68 @@
+name: Release Management
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  tag-and-bump:
+    name: Tag Release & Bump Version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - name: Read version from package.json
+        id: pkg
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          if [[ $VERSION == *"snapshot"* ]]; then
+            echo "is_snapshot=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_snapshot=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Release Tag
+        if: steps.pkg.outputs.is_snapshot == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "v${{ steps.pkg.outputs.version }}" -m "Release v${{ steps.pkg.outputs.version }}"
+          git push origin "v${{ steps.pkg.outputs.version }}"
+
+      - name: Increment Patch and add Snapshot
+        if: steps.pkg.outputs.is_snapshot == 'false'
+        run: |
+          # Increment patch using npm version, then add snapshot suffix
+          npm version patch --no-git-tag-version
+          NEW_VERSION=$(node -p "require('./package.json').version")
+          # Add snapshot manually in package.json
+          node -e "const fs=require('fs'); const pkg=JSON.parse(fs.readFileSync('package.json')); pkg.version='${NEW_VERSION}-snapshot'; fs.writeFileSync('package.json', JSON.stringify(pkg, null, 2) + '\n');"
+          
+          git add package.json
+          git commit -m "chore: bump version to $(node -p \"require('./package.json').version\") [skip ci]"
+          git push origin release
+
+      - name: Create GitHub Release
+        if: steps.pkg.outputs.is_snapshot == 'false'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: "v${{ steps.pkg.outputs.version }}"
+          name: "Release v${{ steps.pkg.outputs.version }}"
+          generate_release_notes: true
+          draft: false
+          prerelease: false

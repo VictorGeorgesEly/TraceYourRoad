@@ -1,0 +1,67 @@
+[
+  {
+    "id": "pt1",
+    "roadtripId": "rt1",
+    "title": "San Francisco",
+    "description": "Starting point of our journey. Golden Gate Bridge is a must.",
+    "coordinates": { "latitude": 37.7749, "longitude": -122.4194 },
+    "type": "city",
+    "date": "2023-06-01T10:00:00Z",
+    "order": 0,
+    "articles": ["art1"],
+    "galleries": ["gal1"],
+    "coverImage": "https://picsum.photos/seed/pt1/600/400"
+  },
+  {
+    "id": "pt2",
+    "roadtripId": "rt1",
+    "title": "Monterey",
+    "description": "Famous for its aquarium and Cannery Row.",
+    "coordinates": { "latitude": 36.6002, "longitude": -121.8947 },
+    "type": "city",
+    "date": "2023-06-03T14:00:00Z",
+    "order": 1,
+    "articles": [],
+    "galleries": [],
+    "coverImage": "https://picsum.photos/seed/pt2/600/400"
+  },
+  {
+    "id": "pt3",
+    "roadtripId": "rt1",
+    "title": "Los Angeles",
+    "description": "The City of Angels. End of the trip.",
+    "coordinates": { "latitude": 34.0522, "longitude": -118.2437 },
+    "type": "city",
+    "date": "2023-06-10T12:00:00Z",
+    "order": 2,
+    "articles": ["art2"],
+    "galleries": [],
+    "coverImage": "https://picsum.photos/seed/pt3/600/400"
+  },
+  {
+    "id": "pt4",
+    "roadtripId": "rt2",
+    "title": "Reykjavik",
+    "description": "Capital of Iceland.",
+    "coordinates": { "latitude": 64.1466, "longitude": -21.9426 },
+    "type": "city",
+    "date": "2023-08-15T09:00:00Z",
+    "order": 0,
+    "articles": [],
+    "galleries": ["gal2"],
+    "coverImage": "https://picsum.photos/seed/pt4/600/400"
+  },
+  {
+    "id": "pt5",
+    "roadtripId": "rt2",
+    "title": "Akureyri",
+    "description": "Capital of the North.",
+    "coordinates": { "latitude": 65.6828, "longitude": -18.1105 },
+    "type": "city",
+    "date": "2023-08-18T11:00:00Z",
+    "order": 1,
+    "articles": [],
+    "galleries": [],
+    "coverImage": "https://picsum.photos/seed/pt5/600/400"
+  }
+]

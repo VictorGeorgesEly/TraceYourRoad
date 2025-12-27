@@ -1,0 +1,41 @@
+[
+  {
+    "id": "rt1",
+    "userId": "user1",
+    "title": "California Coast",
+    "description": "A beautiful drive along the Pacific Coast Highway from SF to LA.",
+    "countries": ["USA"],
+    "polyline": [
+      { "latitude": 37.7749, "longitude": -122.4194 },
+      { "latitude": 36.6002, "longitude": -121.8947 },
+      { "latitude": 34.0522, "longitude": -118.2437 }
+    ],
+    "startDate": "2023-06-01T10:00:00Z",
+    "endDate": "2023-06-10T18:00:00Z",
+    "points": ["pt1", "pt2", "pt3"],
+    "coverImage": "https://picsum.photos/seed/rt1/800/600",
+    "stats": {
+      "distance": 800,
+      "duration": 10
+    }
+  },
+  {
+    "id": "rt2",
+    "userId": "user1",
+    "title": "Iceland Ring Road",
+    "description": "Exploring the land of fire and ice.",
+    "countries": ["Iceland"],
+    "polyline": [
+      { "latitude": 64.1466, "longitude": -21.9426 },
+      { "latitude": 65.6828, "longitude": -18.1105 }
+    ],
+    "startDate": "2023-08-15T09:00:00Z",
+    "endDate": "2023-08-25T17:00:00Z",
+    "points": ["pt4", "pt5"],
+    "coverImage": "https://picsum.photos/seed/rt2/800/600",
+    "stats": {
+      "distance": 1332,
+      "duration": 11
+    }
+  }
+]

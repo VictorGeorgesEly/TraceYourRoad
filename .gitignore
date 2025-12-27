@@ -2,6 +2,7 @@
 
 # dependencies
 node_modules/
+.pnpm-store/
 
 # Expo
 .expo/
@@ -10,6 +11,8 @@ web-build/
 expo-env.d.ts
 
 # Native
+ios/
+android/
 .kotlin/
 *.orig.*
 *.jks
@@ -21,23 +24,37 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
-# debug
+# debug / logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+pnpm-debug.log*
+*.log
 
-# macOS
+# Test & Coverage
+coverage/
+junit.xml
+
+# Security (Trivy)
+trivy-results.sarif
+
+# macOS / Windows
 .DS_Store
+Thumbs.db
 *.pem
 
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
 # local env files
+.env
 .env*.local
 
 # typescript
 *.tsbuildinfo
 
+# temporary / templates
 app-example
-
-# generated native folders
-/ios
-/android

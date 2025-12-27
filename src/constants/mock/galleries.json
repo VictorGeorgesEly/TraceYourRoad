@@ -1,0 +1,44 @@
+[
+  {
+    "id": "gal1",
+    "pointId": "pt1",
+    "title": "SF Highlights",
+    "description": "Photos from our day in San Francisco",
+    "images": [
+      {
+        "id": "img1",
+        "uri": "https://picsum.photos/seed/img1/1200/800",
+        "thumbnail": "https://picsum.photos/seed/img1/300/200",
+        "width": 1200,
+        "height": 800,
+        "caption": "Cable Car"
+      },
+      {
+        "id": "img2",
+        "uri": "https://picsum.photos/seed/img2/1200/800",
+        "thumbnail": "https://picsum.photos/seed/img2/300/200",
+        "width": 1200,
+        "height": 800,
+        "caption": "Painted Ladies"
+      }
+    ],
+    "createdAt": "2023-06-01T20:00:00Z"
+  },
+  {
+    "id": "gal2",
+    "pointId": "pt4",
+    "title": "Reykjavik Vibes",
+    "description": "Colors of the city",
+    "images": [
+      {
+        "id": "img3",
+        "uri": "https://picsum.photos/seed/img3/1200/800",
+        "thumbnail": "https://picsum.photos/seed/img3/300/200",
+        "width": 1200,
+        "height": 800,
+        "caption": "Hallgrimskirkja"
+      }
+    ],
+    "createdAt": "2023-08-15T20:00:00Z"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "art1",
+    "pointId": "pt1",
+    "title": "Walking the Golden Gate",
+    "content": "# Golden Gate Bridge\n\nIt was a foggy morning, but the bridge looked majestic as always. We walked across and took many photos.\n\n## Tips\n- Bring a jacket\n- Go early to avoid crowds",
+    "coverImage": "https://picsum.photos/seed/art1/800/600",
+    "images": ["https://picsum.photos/seed/art1-1/800/600"],
+    "publishedAt": "2023-06-02T09:00:00Z",
+    "author": "user1"
+  },
+  {
+    "id": "art2",
+    "pointId": "pt3",
+    "title": "Hollywood Sign Hike",
+    "content": "We hiked up to the Hollywood sign. The view of LA is incredible from up there.",
+    "coverImage": "https://picsum.photos/seed/art2/800/600",
+    "images": [],
+    "publishedAt": "2023-06-11T10:00:00Z",
+    "author": "user1"
+  }
+]

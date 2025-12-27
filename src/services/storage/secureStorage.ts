@@ -1,0 +1,29 @@
+import * as SecureStore from 'expo-secure-store';
+import { Platform } from 'react-native';
+
+// SecureStore doesn't work on web, we need a fallback or conditional
+const isWeb = Platform.OS === 'web';
+
+export const setItem = async (key: string, value: string) => {
+  if (isWeb) {
+    localStorage.setItem(key, value);
+  } else {
+    await SecureStore.setItemAsync(key, value);
+  }
+};
+
+export const getItem = async (key: string) => {
+  if (isWeb) {
+    return localStorage.getItem(key);
+  } else {
+    return await SecureStore.getItemAsync(key);
+  }
+};
+
+export const deleteItem = async (key: string) => {
+  if (isWeb) {
+    localStorage.removeItem(key);
+  } else {
+    await SecureStore.deleteItemAsync(key);
+  }
+};

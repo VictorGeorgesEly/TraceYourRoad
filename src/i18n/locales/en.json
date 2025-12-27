@@ -1,0 +1,77 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "save": "Save",
+    "back": "Back",
+    "ok": "OK",
+    "danger_zone": "Danger Zone"
+  },
+  "auth": {
+    "login_title": "TraceYourRoad",
+    "email_label": "Email",
+    "password_label": "Password",
+    "login_btn": "Login",
+    "login_failed": "Login Failed",
+    "invalid_email": "Invalid email",
+    "password_min": "Password must be at least 6 characters"
+  },
+  "tabs": {
+    "map": "Map",
+    "roadtrips": "Roadtrips",
+    "profile": "Profile",
+    "edit_profile": "Edit Profile"
+  },
+  "roadtrips": {
+    "title": "Roadtrips",
+    "empty": "No roadtrips found. Start a new adventure!",
+    "distance": "Distance",
+    "duration": "Duration",
+    "stops": "Stops",
+    "itinerary": "Itinerary",
+    "add_point": "Add Point",
+    "delete_confirm_title": "Delete Roadtrip",
+    "delete_confirm_msg": "Are you sure you want to delete this roadtrip? This action cannot be undone.",
+    "delete_btn": "Delete Roadtrip",
+    "create_title": "Create Roadtrip",
+    "field_title": "Title",
+    "field_desc": "Description",
+    "field_country": "Country",
+    "create_btn": "Create Roadtrip",
+    "created_msg": "Roadtrip created!"
+  },
+  "points": {
+    "type_label": "Type (city, monument, nature...)",
+    "add_btn": "Add Point",
+    "added_msg": "Point added!",
+    "delete_confirm_title": "Delete Point",
+    "delete_confirm_msg": "Are you sure?",
+    "delete_btn": "Delete Point",
+    "write_article": "Write Article",
+    "read_articles": "Read Articles",
+    "view_photos": "View Photos"
+  },
+  "articles": {
+    "create_title": "Write Article",
+    "field_title": "Article Title",
+    "field_content": "Content (Markdown)",
+    "publish_btn": "Publish Article",
+    "published_msg": "Article published!"
+  },
+  "profile": {
+    "edit_btn": "Edit Profile",
+    "share_btn": "Share",
+    "logout_btn": "Logout",
+    "stats_roadtrips": "Roadtrips",
+    "stats_countries": "Countries",
+    "stats_km": "km",
+    "share_msg": "Check out my travel profile on TraceYourRoad! 🌍",
+    "share_title": "TraceYourRoad Profile",
+    "edit_title": "Edit Profile",
+    "save_changes": "Save Changes",
+    "updated_msg": "Profile updated successfully"
+  }
+}
